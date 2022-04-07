@@ -1,0 +1,153 @@
+<!--    ¿QUE ES HTML?
+
+    - Hyper Tex Markup Language.
+    - Es el lenguaje estandar para crear paginas web.
+    - HTML describe la estructura de una pagina web.
+    - Le indica al explorador que y como mostrarlo.
+    - Consiste en etiquetas.
+    - Las etiquetas indican parrafos, titulos, vinculos, etc.
+    - NO ES UN LENGUAJE DE PROGRAMACION.
+    
+-->
+
+<!-- Estructura HTML -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        table, th, td {
+
+            border: 1px solid black;
+
+        }
+
+    </style>
+    <title>Blog de ejemplo HTML</title>
+</head>
+<body>
+
+    <!-- "table" Sirve para crear tablas -->
+
+    <table style="width: 500px;">
+
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito Feliz</td>
+                <td>20.000</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>30.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 50.000</td>
+        </tfoot>
+
+    </table>
+
+    <!-- "ul" es una lista no ordenada, "li" significa list item. -->
+
+    <ul>
+
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    
+    </ul>
+    
+    <!-- "ol" es una lista ordenada, "li" significa list item. -->
+
+    <ol>
+
+        <li value="0">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman">Sub elemento1</li>
+                <li style="list-style-type: lower-roman">Sub elemento2</li>
+                <li style="list-style-type: lower-roman">Sub elemento3</li>
+            </ol>
+        </li>
+    
+    </ol>
+
+    <!-- La etiqueta "form" sirve para crear formularios.
+        Action debe tener la ruta dentro de nuestro servidor.
+    -->
+
+    <form action="formulario" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+        <br>
+
+        <label for="apellido">Apellido:</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido">
+
+        <br>
+
+        <label for="comentario">Comentario:</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+
+        <br>
+
+        <button type="button">Tipo Button</button>
+        <button type="reset">Tipo Reset</button>
+        <button type="submit">Tipo Submit</button>
+
+    </form>
+
+    <!-- La etiqueta h1 (heading) generalmente se utiliza para poder hacer titulos, lo ideal es solo mostrar titulos, no para mostrar texto mas grande.  -->
+    
+    <h1>Mi primer heading</h1> 
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+
+    <p>Chanchito feliz esta muy feliz.</p> <!-- Esto es un parrafo -->
+    <p>Chanchito triste esta muy triste</p>
+
+    <hr> <!-- Esto es una linea -->
+
+    <h2>Chanchito 1</h2>
+
+    <!-- "br" es para forzar el salto de linea -->
+    <!-- La etiqueta de span tiene como objetivo poder identificar un texto dentro de otra etiqueta. -->
+
+    <p>Esto es un texto <span style="color:blue"> mucho mas largo </span> y es para
+        mostrar <br> la etiqueta span!                   
+    </p>
+
+     <!-- La etiqueta "a" sirve para crear hipervinculos. "target="_blank"" Sirve para abrir el enlace en otra pagina -->
+
+    <a target="_blank" href="https://www.google.com/">Ir a google</a>
+
+    <img src="img/fight-club-soap.jpg" width="400" height="">
+
+
+
+</body>
+</html>
