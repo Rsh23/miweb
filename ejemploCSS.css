@@ -1,0 +1,97 @@
+/*
+
+    ¿QUE ES CSS?
+
+    - Cascading Style Sheets
+    - Describe la presentacion de docs HTML
+    - Un doc HTML puede tener multiples estilos CSS
+    - Funciona mediante selectores 
+    - Se puede seleccionar mas de 1 elemento
+    - Hay distintas propiedades con distintos valores
+
+*/
+
+
+body{
+
+    background-color: whitesmoke;
+
+}
+
+#titulo{  /* # Esto es para seleccionar a un id */
+
+    color: tomato;
+
+}
+
+p.texto{  /* " . " Es para seleccionar una clase (class) */
+
+    color: slateblue;
+
+}
+
+p.especial{ 
+
+    color: mediumseagreen;
+
+}
+
+div p { /* Esto es para seleccionas a las etiquetas "p" dentro de un "div" */
+
+    color: aquamarine;
+
+}
+
+div h2, h3 { /* Esto es para seleccionas a las etiquetas "h2 y h3" dentro de un "div" */
+
+    color: red;
+
+}
+
+*{   /* Esto es un selector universal, se seleccionan todos los elementos */
+
+    font-size: 24px;
+    color: rgb(121, 56, 56);
+
+}
+
+/* 
+.color{   colores hexadecimales
+
+    color: #ff0000;
+
+}
+
+.color{   colores RGB
+
+    color: rgb(0, 0, 255);
+
+}
+*/ 
+
+.color{   /* Propiedades de border */
+
+    /* border: 5px red groove; */
+
+    /*
+        
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 1rem;
+
+}
+
