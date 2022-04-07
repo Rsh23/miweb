@@ -1,0 +1,269 @@
+/*
+
+    ¿QUE ES CSS?
+
+    - Cascading Style Sheets
+    - Describe la presentacion de docs HTML
+    - Un doc HTML puede tener multiples estilos CSS
+    - Funciona mediante selectores 
+    - Se puede seleccionar mas de 1 elemento
+    - Hay distintas propiedades con distintos valores
+
+*/
+
+
+body{
+
+    background-color: whitesmoke;
+
+}
+
+#titulo{  /* # Esto es para seleccionar a un id */
+
+    color: tomato;
+
+}
+
+p.texto{  /* " . " Es para seleccionar una clase (class) */
+
+    color: slateblue;
+
+}
+
+p.especial{ 
+
+    color: mediumseagreen;
+
+}
+
+div p { /* Esto es para seleccionas a las etiquetas "p" dentro de un "div" */
+
+    color: aquamarine;
+
+}
+
+div h2, h3 { /* Esto es para seleccionas a las etiquetas "h2 y h3" dentro de un "div" */
+
+    color: red;
+
+}
+
+*{   /* Esto es un selector universal, se seleccionan todos los elementos */
+
+    font-size: 24px;
+    /* color: rgb(121, 56, 56); */
+
+}
+
+/* 
+.color{   colores hexadecimales
+
+    color: #ff0000;
+
+}
+
+.color{   colores RGB
+
+    color: rgb(0, 0, 255);
+
+}
+*/ 
+
+.color{   /* Propiedades de border */
+
+    /* border: 5px red groove; */
+
+    /*
+        
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 1rem;
+
+}
+
+#fondo{
+
+    background-color: rgba(255,0,0);
+    /*opacity: 0.3;*/
+    height: 200px;   
+    background: #f00 url("img/fight-club-soap.jpg") repeat-y center bottom / 100px 100px;
+    
+}
+
+.margen{
+
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+
+}
+
+.text{
+    
+    font-family: 'Rubik Puddles', cursive;  /* Esto es para cambiar la fuente */
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;   /* Esto es para agregarle sombras al texto */
+
+}
+
+/* Estos son selectores de estado para links con etiqueta "a" */
+
+a:visited{
+
+    color: blueviolet;
+
+}
+
+a:visited{
+
+    color: gray;
+
+}
+
+a:hover{
+
+    color: yellow;
+
+}
+
+a:active{
+
+    color: red;
+
+}
+
+/* Estilos para listas */
+
+ul{
+
+    background-color: cyan;
+    list-style-type: square;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+
+}
+
+table{
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+
+    border: solid 1px #eee;
+    padding: 5px;
+
+}
+
+th{
+
+    background-color: tomato;
+    color: white;
+    text-align: left;
+
+}
+
+tr:nth-child(even){   /* Esto colorea el background segun lo que se necesite (odd o even) */
+
+    background-color: #eee
+
+}
+
+tr:hover{   /* Esto hace que se enegrezcan las celdas cuando pases el cursor por encima, ademas cambia el cursor a pointer */
+
+    background-color: #aaa;
+    cursor: pointer;
+
+}
+
+span{
+
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+    
+}
+
+.inline{
+
+    display: inline;
+
+}
+
+#position{    /* Esto le da la posicion que nostros queramos dentro de la pagina */
+
+    position: sticky;
+    left: 20px;
+    top: 25px;
+
+}
+
+.left{
+
+    float: left;      /* Esto hace flotar a los elementos dentro de los parametros puestos */
+    width: 200px;
+    height: 200px;
+
+}
+
+.right{
+
+    float: right;
+
+}
+
+.container{
+
+    height: 200px;
+
+}
+
+.column{
+
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+
+}
+
+.inline-block{
+
+    display: inline;
+    height: 55px;
+    background-color: red;
+
+}
+
+.center{   /* Esto sirve para centrar */
+
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+
+}
